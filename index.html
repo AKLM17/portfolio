@@ -34,7 +34,8 @@
             flex-wrap: wrap;
             justify-content: space-around;
             max-width: 1200px;
-            margin: 20px auto;
+            margin-top: 50px; /* Add top padding */
+            width: 100%;
         }
         .project {
             background-color: #616eed; 
@@ -45,6 +46,7 @@
             text-align: center;
             border-radius: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
+            font-weight: bold; /* Make font thicker */
         }
         .project:hover {
             transform: scale(1.05);
@@ -77,6 +79,15 @@
             cursor: pointer;
             border-radius: 5px;
         }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project {
+                width: 80%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -84,12 +95,12 @@
         <h1>Alicja Klimurczyk</h1>
         <h2>Portfolio</h2>
         <div class="container">
-            <a href="YOUR_GOOGLE_DRIVE_LINK_1" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="Click to view Project 1">Project 1</a>
-            <a href="YOUR_GOOGLE_DRIVE_LINK_2" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="Click to view Project 2">Project 2</a>
-            <a href="YOUR_GOOGLE_DRIVE_LINK_3" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="Click to view Project 3">Project 3</a>
-            <a href="https://drive.google.com/file/d/19GVkD5wGQ7x_Qn_u-MqBZnTNex0FHGJJ/view?usp=sharing" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="I made this brochure for a SaaS startup ahead of an ecommerce conference.">Brochure</a>
-            <a href="https://drive.google.com/file/d/1MogqrE4oLLBEKiCYBsGRfdU4B2V0GCGW/view?usp=sharing" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="This is a lead magnet I created for an HR-Tech startup.">Ebook</a>
-            <a href="https://preview.mailerlite.com/d3t2h9m8n8" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="A newsletter for those who downloaded my Mental Health First Aid ebook.">Newsletter</a>
+            <a href="YOUR_GOOGLE_DRIVE_LINK_1" class="project" style="text-decoration: none; color: white;" target="_blank" title="Click to view Project 1">Project 1</a>
+            <a href="YOUR_GOOGLE_DRIVE_LINK_2" class="project" style="text-decoration: none; color: white;" target="_blank" title="Click to view Project 2">Project 2</a>
+            <a href="YOUR_GOOGLE_DRIVE_LINK_3" class="project" style="text-decoration: none; color: white;" target="_blank" title="Click to view Project 3">Project 3</a>
+            <a href="https://drive.google.com/file/d/19GVkD5wGQ7x_Qn_u-MqBZnTNex0FHGJJ/view?usp=sharing" class="project" style="text-decoration: none; color: white;" target="_blank" title="I made this brochure for a SaaS startup ahead of an ecommerce conference.">Brochure</a>
+            <a href="https://drive.google.com/file/d/1MogqrE4oLLBEKiCYBsGRfdU4B2V0GCGW/view?usp=sharing" class="project" style="text-decoration: none; color: white;" target="_blank" title="This is a lead magnet I created for an HR-Tech startup.">Ebook</a>
+            <a href="https://preview.mailerlite.com/d3t2h9m8n8" class="project" style="text-decoration: none; color: white;" target="_blank" title="A newsletter for those who downloaded my Mental Health First Aid ebook.">Newsletter</a>
         </div>
     </div>
     <footer>
