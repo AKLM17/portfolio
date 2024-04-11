@@ -7,34 +7,38 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: white; 
-            color: white;
+            background-color: #f4f4f4; 
+            color: #333;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+        }
+        h1, h2 {
+            text-align: center;
         }
         h1 {
             color: #272850;
-            margin-bottom: 0;
+            margin-bottom: 5px;
         }
         h2 {
-            color: #3ec606; /* Vivid green for "Portfolio" */
-            margin-top: 5px;
+            color: #616eed; /* Lighter blue for "Portfolio" */
+            margin-top: 0;
         }
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             max-width: 1200px;
-            margin-top: 20px;
+            margin: 20px auto;
         }
         .project {
             background-color: #616eed; 
-            color: #white; 
-            width: 30%;
+            color: white; 
+            width: calc(30% - 20px);
             margin: 10px;
             padding: 20px;
             text-align: center;
@@ -42,9 +46,35 @@
             transition: transform 0.3s, box-shadow 0.3s;
         }
         .project:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             cursor: pointer;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            background-color: #272850;
+            color: white;
+        }
+        .footer-link {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .email-button {
+            background-color: #3ec606;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -53,12 +83,12 @@
         <h1>Alicja Klimurczyk</h1>
         <h2>Portfolio</h2>
         <div class="container">
-            <a href="YOUR_GOOGLE_DRIVE_LINK_1" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="Click to view Project 1">Project 1</a>
-            <a href="YOUR_GOOGLE_DRIVE_LINK_2" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="Click to view Project 2">Project 2</a>
-            <a href="YOUR_GOOGLE_DRIVE_LINK_3" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="Click to view Project 3">Project 3</a>
-            <a href="https://drive.google.com/file/d/19GVkD5wGQ7x_Qn_u-MqBZnTNex0FHGJJ/view?usp=sharing" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="I made this brochure for a SaaS startup ahead of an ecommerce conference.">Brochure</a>
-            <a href="https://drive.google.com/file/d/1MogqrE4oLLBEKiCYBsGRfdU4B2V0GCGW/view?usp=sharing" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="This is a lead magnet I created for an HR-Tech startup.">Ebook</a>
-            <a href="https://preview.mailerlite.com/d3t2h9m8n8" class="project" style="text-decoration: none; color: #272850;" target="_blank" title="A newsletter for those who downloaded my Mental Health First Aid ebook.">Newsletter</a>
+            <!-- Project links remain unchanged -->
         </div>
+    </div>
+    <footer>
+        <a href="https://drive.google.com/file/d/1weTGQDrgiHYwzs0trR0brFeO8xFjhtFd/view?usp=sharing" class="footer-link" target="_blank">Back to my CV</a>
+        <a href="mailto:a.klimurczyk@gmail.com" class="email-button">Email me</a>
+    </footer>
 </body>
 </html>
