@@ -4,43 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #E1DDDB;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #0C4A60;
+            margin-bottom: 0;
+        }
+        h2 {
+            color: #EF6C33;
+            margin-top: 5px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin-top: 20px;
+        }
+        .project {
+            background-color: #ABDFF1;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div style="text-align: center; padding: 20px;">
-        <h1 style="font-family: Arial, sans-serif; color: #6a5acd;">Your Name</h1>
-        <div style="margin-top: 20px;">
-         <div style="display: flex; justify-content: space-around; flex-wrap: wrap; padding: 10px;">
-    <a href="YOUR_GOOGLE_DRIVE_LINK_1" style="text-decoration: none;">
-        <div style="width: 30%; padding: 20px; margin: 10px; background-color: #f0e68c; color: #3c3c3c; border-radius: 10px;">
-            Project 1
-        </div>
-    </a>
-    <a href="YOUR_GOOGLE_DRIVE_LINK_2" style="text-decoration: none;">
-        <div style="width: 30%; padding: 20px; margin: 10px; background-color: #f0e68c; color: #3c3c3c; border-radius: 10px;">
-            Project 2
-        </div>
-    </a>
-    <a href="YOUR_GOOGLE_DRIVE_LINK_3" style="text-decoration: none;">
-        <div style="width: 30%; padding: 20px; margin: 10px; background-color: #f0e68c; color: #3c3c3c; border-radius: 10px;">
-            Project 3
-        </div>
-    </a>
-    <a href="YOUR_GOOGLE_DRIVE_LINK_4" style="text-decoration: none;">
-        <div style="width: 30%; padding: 20px; margin: 10px; background-color: #f0e68c; color: #3c3c3c; border-radius: 10px;">
-            Project 4
-        </div>
-    </a>
-    <a href="YOUR_GOOGLE_DRIVE_LINK_5" style="text-decoration: none;">
-        <div style="width: 30%; padding: 20px; margin: 10px; background-color: #f0e68c; color: #3c3c3c; border-radius: 10px;">
-            Project 5
-        </div>
-    </a>
-    <a href="YOUR_GOOGLE_DRIVE_LINK_6" style="text-decoration: none;">
-        <div style="width: 30%; padding: 20px; margin: 10px; background-color: #f0e68c; color: #3c3c3c; border-radius: 10px;">
-            Project 6
-        </div>
-    </a>
-</div>
+    <div>
+        <h1>Your Name</h1>
+        <h2>Portfolio</h2>
+        <div class="container">
+            <a href="YOUR_GOOGLE_DRIVE_LINK_1" class="project" style="text-decoration: none; color: #0C4A60;">Project 1</a>
+            <a href="YOUR_GOOGLE_DRIVE_LINK_2" class="project" style="text-decoration: none; color: #0C4A60;">Project 2</a>
+            <a href="YOUR_GOOGLE_DRIVE_LINK_3" class="project" style="text-decoration: none; color: #0C4A60;">Project 3</a>
+            <a href="YOUR_GOOGLE_DRIVE_LINK_4" class="project" style="text-decoration: none; color: #0C4A60;">Project 4</a>
+            <a href="YOUR_GOOGLE_DRIVE_LINK_5" class="project" style="text-decoration: none; color: #0C4A60;">Project 5</a>
+            <a href="YOUR_GOOGLE_DRIVE_LINK_6" class="project" style="text-decoration: none; color: #0C4A60;">Project 6</a>
         </div>
     </div>
 </body>
