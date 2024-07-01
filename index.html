@@ -16,30 +16,32 @@
             color: #333;
             height: 100%;
             width: 100%;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         h1 {
             color: #333;
-            margin-top: 40px;
+            margin-top: 20px;
             font-size: 2.5em;
             font-weight: bold;
             letter-spacing: 1px;
             text-align: center;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
             align-items: center;
-            height: calc(100% - 120px);
-            width: 100%;
             gap: 20px;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .project {
             background-color: #616eed;
             color: white;
-            width: calc(30% - 20px);
+            width: 100%;
+            max-width: 300px;
             padding: 20px;
             text-align: center;
             border-radius: 10px;
@@ -52,6 +54,17 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             cursor: pointer;
         }
+        .placeholder {
+            background-color: #ccc;
+            color: black;
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px dotted #333;
+            text-decoration: none;
+        }
         footer {
             padding: 20px;
             width: 100%;
@@ -59,8 +72,7 @@
             background-color: #f4f4f9;
             border-top: 2px solid #333;
             color: #333;
-            position: absolute;
-            bottom: 0;
+            margin-top: auto;
         }
         .footer-link {
             color: #333;
@@ -88,27 +100,27 @@
                 margin-top: 20px;
             }
             .container {
-                flex-direction: column;
-                align-items: center;
-                height: auto;
+                grid-template-columns: 1fr;
+                padding: 10px;
             }
-            .project {
+            .project, .placeholder {
                 width: 80%;
             }
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Alicja Klimurczyk</h1>
-        <div class="container">
-            <a href="https://aklm17.github.io/documentation/" class="project" target="_blank">Knowledge Base Article</a>
-            <a href="https://drive.google.com/file/d/19GVkD5wGQ7x_Qn_u-MqBZnTNex0FHGJJ/view?usp=sharing" class="project" target="_blank">Technical Documentation</a>
-            <a href="https://drive.google.com/file/d/1UE6S97UQeexww7UWCktZOUxB5nXUfTXS/view?usp=sharing" class="project" target="_blank">UX copy (Zoovu)</a>
-            <a href="https://docs.google.com/spreadsheets/d/1vIrv1vV1P3l8sOq1hYDvS6dvsTl3nOBY/edit?usp=sharing&ouid=109193411722967462747&rtpof=true&sd=true" class="project" target="_blank">UI copy PL/EN (delivery app)</a>
-            <a href="https://drive.google.com/file/d/1MogqrE4oLLBEKiCYBsGRfdU4B2V0GCGW/view?usp=sharing" class="project" target="_blank">Ebook</a>
-            <a href="https://preview.mailerlite.com/d3t2h9m8n8" class="project" target="_blank">Newsletter (recycled ebook)</a>
-        </div>
+    <h1>Alicja Klimurczyk</h1>
+    <div class="container">
+        <a href="https://aklm17.github.io/documentation/" class="project" target="_blank">Knowledge Base Article</a>
+        <a href="https://drive.google.com/file/d/19GVkD5wGQ7x_Qn_u-MqBZnTNex0FHGJJ/view?usp=sharing" class="project" target="_blank">Technical Documentation</a>
+        <a href="https://drive.google.com/file/d/1UE6S97UQeexww7UWCktZOUxB5nXUfTXS/view?usp=sharing" class="project" target="_blank">UX copy (Zoovu)</a>
+        <a href="https://docs.google.com/spreadsheets/d/1vIrv1vV1P3l8sOq1hYDvS6dvsTl3nOBY/edit?usp=sharing&ouid=109193411722967462747&rtpof=true&sd=true" class="project" target="_blank">UI copy PL/EN (delivery app)</a>
+        <a href="https://drive.google.com/file/d/1MogqrE4oLLBEKiCYBsGRfdU4B2V0GCGW/view?usp=sharing" class="project" target="_blank">Ebook</a>
+        <a href="https://drive.google.com/file/d/1MogqrE4oLLBEKiCYBsGRfdU4B2V0GCGW/view?usp=sharing" class="project" target="_blank">Ebook</a>
+        <a href="https://drive.google.com/file/d/1MogqrE4oLLBEKiCYBsGRfdU4B2V0GCGW/view?usp=sharing" class="project" target="_blank">Ebook</a>
+        <a href="https://drive.google.com/file/d/1MogqrE4oLLBEKiCYBsGRfdU4B2V0GCGW/view?usp=sharing" class="project" target="_blank">Ebook</a>
+        <a href="https://preview.mailerlite.com/d3t2h9m8n8" class="project" target="_blank">Newsletter (recycled ebook)</a>
     </div>
     <footer>
         <a href="https://drive.google.com/file/d/1nZ9wKST4xhrdaBbIl9dtiTfl2pnW84fJ/view?usp=sharing" class="footer-link" target="_blank">My CV</a>
